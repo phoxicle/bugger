@@ -32,13 +32,12 @@ if(isset($args['bugginess']))
     }
 }
 
-//TODO update help
 if(!array_filter($args) || isset($args['help']))
 {
 	$help = sprintf("
 risk_utils - A number of interesting functions related to figuring out which commits cause bugs.
 
-usage: risk_utils [guess] [bugginess] --hash a1a1a1 [help]
+usage: risk_utils [--guess] [--bugginess] -h=sOmEhAsH
 
 options:
     guess           Provided a fixing-commit hash, get the introducing commits. Hash does *not* need to be stored in

@@ -65,9 +65,9 @@ if(!array_filter($args) || isset($args['help']))
 {
 
 	$keys = $metrics->get_metric_keys();
-//TODO update help text
+
     echo sprintf("
-usage: risk_predict [test] [train] [new --hash a1a1a1] -m metric_key1,metric_key2
+usage: risk_predict [--test] [--train] [--new --hash a1a1a1] -m=metric_key1,metric_key2
 
 options:
     test                Split available data into training and test sets and calculate predictive performance.

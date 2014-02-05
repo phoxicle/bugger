@@ -28,11 +28,10 @@ if(isset($args['bugginess']))
     $risk->bugginess();
 }
 
-//TODO update help
 if(!array_filter($args) || isset($args['help']))
 {
 	$help = sprintf("
-usage: risk_mine [retrieve] [guess] [bisect] [bugginess] [help]
+usage: risk_mine [--retrieve] [--guess] [--bisect] [--bugginess]
 
 options:
     retrieve      Retrieve all commits and their tickets and store them in our database.

@@ -54,14 +54,13 @@ if(isset($args['compare']))
     }
 }
 
-//TODO update help
 if(!array_filter($args) || isset($args['help']))
 {
 
 	$keys = $metrics->get_metric_keys();
 
     echo sprintf("
-usage: risk_metrics [measure] [correlate] [compare] -m metric_key
+usage: risk_metrics [--measure] [--correlate] [--compare] -m=metric_key
 
 options:
     measure                 Measure a metric for a commit
